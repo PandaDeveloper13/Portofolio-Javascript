@@ -1,0 +1,56 @@
+
+
+body {
+    background-image: url('https://img.freepik.com/vrije-vector/achtergrond-met-dynamische-lijnen-in-papierstijl_23-2149008629.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1600px 740px;
+}
+p{
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+    color: white;
+    padding: 130px;
+    text-align: center;
+
+}
+footer {
+    text-align: end;
+    height:10px;
+    font-size: 15px;
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+}
+
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+}
+
+a:hover {
+    color: midnightblue;
+    background-color: transparent;
+    text-decoration: underline;
+    text-shadow: 2px 2px black;
+}
+
+a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+    text-shadow: 2px 2px black;
+}
+.terugpijl{
+    position: absolute;
+    width: 87px;
+    height: 87px;
+    top: 5vh;
+    right: 5vh;
+}

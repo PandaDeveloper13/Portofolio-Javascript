@@ -1,0 +1,21 @@
+body {
+    background-image: url('https://static.vecteezy.com/ti/gratis-vector/p1/26178025-contrast-rood-zwart-tech-abstract-zakelijke-achtergrond-vector.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 1680px 860px;
+}
+p{
+
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+    padding: 350px;
+    text-align: center;
+}
+.terugpijl{
+    position: absolute;
+    width: 87px;
+    height: 87px;
+    top: 5vh;
+    right: 5vh;
+}

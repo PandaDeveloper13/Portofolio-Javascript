@@ -1,0 +1,62 @@
+header{
+    Background-color:midnightblue;
+    height: 100px;
+    width: 1500px;
+    text-align: center;
+}
+
+h1{
+    display: inline-block;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+
+main{
+    padding:10px;
+    height:1000px;
+    width:1463px;
+    color: white;
+    text-shadow: 2px 2px black;
+
+}
+h2{
+    margin:43px;
+    font-size:40px;
+    color: white;
+}
+p{
+    width:1000px;
+ font-size: 35px;
+    margin: 43px;
+    text-shadow: 2px 2px black;
+    color: white;
+
+}
+
+img{
+    height:325px;
+    width: 375px;
+
+}
+
+footer {
+    background-color: midnightblue;
+    color: white;
+    height:100px;
+    font-size: 20px;
+
+}
+body {
+    background-image: url('https://img.freepik.com/premium-photo/blue-binary-data-computer-screen-cyber-code-coding-communication-digital-cyberspace_817921-9215.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:1600px 760px;
+}
+h3{
+    display: flex;
+    justify-content:space-around;
+}
+
+
+
