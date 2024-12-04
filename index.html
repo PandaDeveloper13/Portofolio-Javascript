@@ -9,16 +9,18 @@
   <title>Yunis Portofolio</title>
     <link rel="icon" type="image/x-icon" href="https://64.media.tumblr.com/44cb6c18c6ad2f83690ccb70e5fb4ab7/5d873709758be557-84/s1280x1920/f79c93a0785e28dbf7523183faf583620e387112.png">
 </head>
+
 <header>
-  <h1>Yunis Alwahban Profiel</h1>
-    <a href="https://www.techniekcollegerotterdam.nl/over-techniek-college-rotterdam">  <img src="https://www.techniekcollegerotterdam.nl/assets/tcr-logo-a6a45f6beeaae69f30221d89d2a3e4ba1e2696114d5587459bf6a5dcf3603228.svg" alt="school logo" align="right" style="width:150px; height: 100px;"  >
+  <h1 id="Begroeting">Yunis Alwahban Profiel</h1>
+    <a href="https://www.techniekcollegerotterdam.nl/over-techniek-college-rotterdam">  <img class="Logo" src="https://www.techniekcollegerotterdam.nl/assets/tcr-logo-a6a45f6beeaae69f30221d89d2a3e4ba1e2696114d5587459bf6a5dcf3603228.svg" alt="school logo"  align="right" style="width:150px; height: 100px;"  >
 
     </a>
 </header>
-<body>
+<button onclick="myFunction()">Dark mode</button>
+<body onload="checkCookie()">
 
 <main>
-    <h2> Introductie </h2>
+    <h2 id="begin"> Introductie </h2>
     <p>
         Hallo mijn naam is Yunis Alwahban. Ik ben 17 jaar oud, ik woon in Zwijndrecht. Ik ben een student van Techniek College Rotterdam en doe nu de studie softwaredeveloper voor mijn 1ste jaar. Mijn hobbies zijn games spelen en relaxen en formule 1 kijken tijdens het weekend. De reden waarom ik deze studie koos is omdat ik meer wil weten over computers en wat het systeem is  en wat er achter zit. Dit is ook mijn 1ste html waar ik aan werk.
     </p>
@@ -31,36 +33,36 @@
 
     </h3>
 
-    <style>
-        div {
-            width: 100px;
-            height: 100px;
-            position: relative;
-            animation-delay: 1750ms;
-            animation: mymove 3257ms;
-            animation-fill-mode: forwards;
-            animation-iteration-count: infinite;
 
-
-        }
-
-        #div1 {animation-timing-function: linear;}
-        #div2 {animation-timing-function: ease-in-out;}
-        #div3 {animation-timing-function: ease-in;}
-
-        @keyframes mymove {
-            from {left:-1720px;}
-            to {left: 2520px;}
-        }
-    </style>
     <div id="div1"><img src="https://www.nascar.com/wp-content/uploads/sites/7/2021/01/19/9C21-NAPA0003-922x520.png " alt="Nascar" style="width: 302px; height: 170px"></div>
     <div id="div2"><img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2024/red-bull-racing.png" alt="F1 car" style="width: 355px; height:127px"></div>
     <div id="div3"><img src="https://i.pinimg.com/originals/48/6b/d6/486bd660c84fac1f0812f0a31623f07c.png " alt="Mercedes car" style="width: 275px; height:115px;"></div>
 
  </main>
+<script>
+
+    let wie = prompt("What is your name")
+    let Dag = new Date()
+    let Uur = Dag.getHours()
+
+    if (Uur >= 0 && Uur < 6) {
+        document.getElementById("begin").innerHTML = 'Ga Slapen '+ wie +".";
+    } else if (Uur >= 6 && Uur < 12) {
+        document.getElementById("begin").innerHTML = 'Goedemorgen '+ wie+ ".";
+    } else if (Uur >= 12 && Uur < 18) {
+        document.getElementById("begin").innerHTML = 'Goedemiddag '+  wie + ".";
+    } else {
+        document.getElementById("begin").innerHTML = 'Goedenavond '+ wie + "." ;
+    }
+
+        function myFunction() {
+            let element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+
+</script>
 <footer>
-    ©2024-Yunis Alwahban
-    <a href="https://outlook.office365.com/mail/"> <img src="https://mailmeteor.com/logos/assets/PNG/Microsoft_Office_Outlook_Logo_512px.png" alt="school logo" align="right"  style="width: 90px; height: 90px;"></a>
+    ©2024-Yunis Alwahban ;D
 </footer>
 </body>
 </html>
