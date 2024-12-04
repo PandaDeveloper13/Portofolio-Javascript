@@ -1,5 +1,3 @@
-
-
 body {
     background-image: url('https://img.freepik.com/vrije-vector/achtergrond-met-dynamische-lijnen-in-papierstijl_23-2149008629.jpg');
     background-repeat: no-repeat;
@@ -53,4 +51,11 @@ a:active {
     height: 87px;
     top: 5vh;
     right: 5vh;
+}
+.dark-mode{
+    background-image: url('https://t3.ftcdn.net/jpg/00/73/08/22/360_F_73082224_ay4Tus31QNHNmGSIty53ZE6mBrBc47cV.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:1600px 760px;
+    opacity: 60%;
 }
