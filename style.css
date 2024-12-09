@@ -65,7 +65,9 @@ h3{
     background-size:1600px 760px;
     opacity: 60%;
 }
-div {
+
+
+#div1 {
     width: 100px;
     height: 100px;
     position: relative;
@@ -73,19 +75,38 @@ div {
     animation: mymove 3257ms;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
-
-
+    animation-timing-function: linear;
 }
-
-#div1 {animation-timing-function: linear;}
-#div2 {animation-timing-function: ease-in-out;}
-#div3 {animation-timing-function: ease-in;}
+#div2 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-delay: 1750ms;
+    animation: mymove 3257ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#div3 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-delay: 1750ms;
+    animation: mymove 3257ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
 
 @keyframes mymove {
     from {left:-1720px;}
     to {left: 2520px;}
 }
 .Logo{
+    align-content: flex-end;
+}
+
+
     align-content: flex-end;
 }
 
