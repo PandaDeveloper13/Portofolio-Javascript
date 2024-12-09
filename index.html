@@ -10,14 +10,30 @@
     <link rel="icon" type="image/x-icon" href="https://64.media.tumblr.com/44cb6c18c6ad2f83690ccb70e5fb4ab7/5d873709758be557-84/s1280x1920/f79c93a0785e28dbf7523183faf583620e387112.png">
 </head>
 
+
+
 <header>
   <h1 id="Begroeting">Yunis Alwahban Profiel</h1>
-    <a href="https://www.techniekcollegerotterdam.nl/over-techniek-college-rotterdam">  <img class="Logo" src="https://www.techniekcollegerotterdam.nl/assets/tcr-logo-a6a45f6beeaae69f30221d89d2a3e4ba1e2696114d5587459bf6a5dcf3603228.svg" alt="school logo"  align="right" style="width:150px; height: 100px;"  >
+    <a href="https://www.techniekcollegerotterdam.nl/over-techniek-college-rotterdam">  <img class="Logo" src="https://www.techniekcollegerotterdam.nl/assets/tcr-logo-a6a45f6beeaae69f30221d89d2a3e4ba1e2696114d5587459bf6a5dcf3603228.svg" alt="school logo"  align="right" style="width:125px; height: 75px;"  >
 
     </a>
+
 </header>
+<div  class="topnav">
+    <a class="active"></a>
+    <a href="javascript:void(0);" class="icon" onclick="MyFunction()">
+        <i class='fas fa-align-justify'></i>
+    </a>
+    <div id="myLinks">
+        <a href="Interview.html">Interview</a>
+        <a href="Contact_Info.html">Contact</a>
+        <a href="Website%20startup.html">Over mij</a>
+        <a href="Projecten.html">Projecten</a>
+    </div>
+
+</div>
 <button onclick="myFunction()">Dark mode</button>
-<body onload="checkCookie()">
+<body>
 
 <main>
     <h2 id="begin"> Introductie </h2>
@@ -39,6 +55,7 @@
     <div id="div3"><img src="https://i.pinimg.com/originals/48/6b/d6/486bd660c84fac1f0812f0a31623f07c.png " alt="Mercedes car" style="width: 275px; height:115px;"></div>
 
  </main>
+
 <script>
 
     let wie = prompt("What is your name")
@@ -55,14 +72,57 @@
         document.getElementById("begin").innerHTML = 'Goedenavond '+ wie + "." ;
     }
 
-        function myFunction() {
+        function  myFunction() {
             let element = document.body;
             element.classList.toggle("dark-mode");
         }
+    function MyFunction() {
+        let x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
 
 </script>
+
+<script src="https://kit.fontawesome.com/31ba203a96.js" crossorigin="anonymous"></script>
+
+<style>
+    .topnav {
+
+        background-color: midnightblue;
+        position: relative;
+        top: -35px;
+    }
+    .topnav #myLinks {
+        display: none;
+    }
+    .topnav a {
+        color: white;
+        padding: 20px 15px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    .topnav a.icon {
+        background: black;
+        display: block;
+        right: 0;
+        top: -10px;
+
+    }
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+</style>
 <footer>
     ©2024-Yunis Alwahban ;D
+</footer>
+</body>
+</html>
 </footer>
 </body>
 </html>
