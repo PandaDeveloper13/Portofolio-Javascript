@@ -105,9 +105,12 @@ h3{
 .Logo{
     align-content: flex-end;
 }
-
-
-    align-content: flex-end;
+button{
+    font-size: 20px;
+    color: white;
+    background-color: black;
 }
+
+
 
 
