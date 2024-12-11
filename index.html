@@ -62,6 +62,7 @@
     let Dag = new Date()
     let Uur = Dag.getHours()
 
+
     if (Uur >= 0 && Uur < 6) {
         document.getElementById("begin").innerHTML = 'Ga Slapen '+ wie +".";
     } else if (Uur >= 6 && Uur < 12) {
@@ -84,6 +85,27 @@
             x.style.display = "block";
         }
     }
+    let countDownDate = new Date("Dec 31, 2024 24:00:0").getTime();
+
+    let x = setInterval(function() {
+
+        let nu = new Date().getTime();
+        let distance = countDownDate - nu;
+
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("Yatta").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s "+ "New year";
+
+
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("Yatta").innerHTML = "Happy new year";
+        }
+    }, 1000);
 
 </script>
 
@@ -120,9 +142,8 @@
 </style>
 <footer>
     ©2024-Yunis Alwahban ;D
+    <p id="Yatta"></p>
 </footer>
-</body>
-</html>
-</footer>
+
 </body>
 </html>
