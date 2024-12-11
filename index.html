@@ -33,7 +33,7 @@
 
 </div>
 <button onclick="myFunction()">Dark mode</button>
-<body>
+<body onload="checkCookie()">
 
 <main>
     <h2 id="begin"> Introductie </h2>
@@ -58,20 +58,7 @@
 
 <script>
 
-    let wie = prompt("What is your name")
-    let Dag = new Date()
-    let Uur = Dag.getHours()
 
-
-    if (Uur >= 0 && Uur < 6) {
-        document.getElementById("begin").innerHTML = 'Ga Slapen '+ wie +".";
-    } else if (Uur >= 6 && Uur < 12) {
-        document.getElementById("begin").innerHTML = 'Goedemorgen '+ wie+ ".";
-    } else if (Uur >= 12 && Uur < 18) {
-        document.getElementById("begin").innerHTML = 'Goedemiddag '+  wie + ".";
-    } else {
-        document.getElementById("begin").innerHTML = 'Goedenavond '+ wie + "." ;
-    }
 
         function  myFunction() {
             let element = document.body;
@@ -106,6 +93,55 @@
             document.getElementById("Yatta").innerHTML = "Happy new year";
         }
     }, 1000);
+    function setCookie(cname,cvalue,exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        let expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) === ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) === 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function checkCookie() {
+
+
+        let user = getCookie("username");
+        if (user !== "") {
+            let Dag = new Date()
+            let Uur = Dag.getHours()
+
+            if (Uur >= 0 && Uur < 6) {
+                document.getElementById("begin").innerHTML = 'Ga Slapen '+ user +".";
+            } else if (Uur >= 6 && Uur < 12) {
+                document.getElementById("begin").innerHTML = 'Goedemorgen '+ user+ ".";
+            } else if (Uur >= 12 && Uur < 18) {
+                document.getElementById("begin").innerHTML = 'Goedemiddag '+  user+ ".";
+            } else {
+                document.getElementById("begin").innerHTML = 'Goedenavond '+ user + "." ;
+            }
+        } else {
+            user = prompt("Please enter your name:","");
+            if (user !== "" && user != null) {
+                setCookie("username", user, 30);
+
+            }
+        }
+    }
+
 
 </script>
 
