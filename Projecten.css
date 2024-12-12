@@ -25,6 +25,12 @@ p{
     background-attachment: fixed;
     background-size:1600px 760px;
     opacity: 60%;
+    button{
+        font-size: 20px;
+        color: black;
+        background-color: white;
+
+    }
 }
 button{
     font-size: 20px;
