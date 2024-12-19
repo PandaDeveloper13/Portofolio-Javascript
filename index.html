@@ -85,7 +85,7 @@
         let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         document.getElementById("Yatta").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s "+ "New year";
+            + minutes + "m " + seconds + "s "+ "New year :D";
 
 
         if (distance < 0) {
@@ -136,7 +136,7 @@
         } else {
             user = prompt("Please enter your name:","");
             if (user !== "" && user != null) {
-                setCookie("username", user, 30);
+                setCookie("username", user, 0);
 
             }
         }
